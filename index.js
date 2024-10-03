@@ -30,7 +30,7 @@ const initializeDBAndServer = async () => {
 initializeDBAndServer();
 
  
-
+app.get("/", (req, res) => res.send("Express on Vercel"));
 
  app.get("/transactions", async (req, res) => {
    
